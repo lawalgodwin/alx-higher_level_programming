@@ -19,13 +19,13 @@ def main():
 
     b = 5
 
-    print(f"{a} + {b} = {calculator_1.add(a, b)}")
+    print(f"{a:d} + {b:d} = {calculator_1.add(a, b)}")
 
-    print(f"{a} - {b} = {calculator_1.sub(a, b)}")
+    print(f"{a:d} - {b:d} = {calculator_1.sub(a, b)}")
 
-    print(f"{a} * {b} = {calculator_1.mul(a, b)}")
+    print(f"{a:d} * {b:d} = {calculator_1.mul(a, b)}")
 
-    print(f"{a} / {b} = {calculator_1.div(a, b)}")
+    print(f"{a:d} / {b:d} = {calculator_1.div(a, b)}")
 
     return (0)
 
