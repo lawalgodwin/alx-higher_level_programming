@@ -18,7 +18,7 @@ def main():
 
         print("1 argument:")
 
-        print("{0} {1}".format((len(argv) - 1), argv[1]))
+        print("{0}: {1}".format((len(argv) - 1), argv[1]))
 
     else:
 
@@ -26,7 +26,7 @@ def main():
 
         for arg in range((len(argv) - 1)):
 
-            print("{0} {1}".format((arg + 1), argv[arg + 1]))
+            print("{0}: {1}".format((arg + 1), argv[arg + 1]))
 
     return (0)
 
