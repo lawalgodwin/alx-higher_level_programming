@@ -2,7 +2,7 @@
 
 from sys import exit
 
-import calculator_1
+from calculator_1 import add, mul, sub, div
 
 
 def main():
@@ -19,13 +19,13 @@ def main():
 
     b = 5
 
-    print("{0:d} + {1:d} = {2:d}".format(a, b, calculator_1.add(a, b)))
+    print("{0:d} + {1:d} = {2:d}".format(a, b, add(a, b)))
 
-    print("{0:d} - {1:d} = {2:d}".format(a, b, calculator_1.sub(a, b)))
+    print("{0:d} - {1:d} = {2:d}".format(a, b, sub(a, b)))
 
-    print("{0:d} * {1:d} = {2:d}".format(a, b, calculator_1.mul(a, b)))
+    print("{0:d} * {1:d} = {2:d}".format(a, b, mul(a, b)))
 
-    print("{0:d} / {1:d} = {2:d}".format(a, b, calculator_1.div(a, b)))
+    print("{0:d} / {1:d} = {2:d}".format(a, b, div(a, b)))
 
     return (0)
 
