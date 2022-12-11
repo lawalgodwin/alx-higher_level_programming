@@ -11,7 +11,7 @@ def uppercase(str1):
     """
 
     for s in str1:
-    
+
         if (ord(s) >= 97) and (ord(s) <= 122):
 
             s = chr(ord(s) - 32)
@@ -19,4 +19,3 @@ def uppercase(str1):
         print("{}".format(s), end='')
 
     print()
-    
