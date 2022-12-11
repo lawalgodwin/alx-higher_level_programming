@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def add(a, b):
+def pow(a, b):
 
     if (b == 0):
 
