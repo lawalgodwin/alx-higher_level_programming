@@ -13,7 +13,7 @@ if (r[0] < 6 and r[0] != 0):
 
 elif (r[0] > 5):
 
-    print(f"Last digit of {result[1]} is {result[0]:d} and is greater than 5")
+    print(f"Last digit of {r[1]} is {r[0]:d} and is greater than 5")
 
 else:
-    print(f"Last digit of {result[1]:d} is {result[0]:d} and is 0")
+    print(f"Last digit of {r[1]:d} is {r[0]:d} and is 0")
