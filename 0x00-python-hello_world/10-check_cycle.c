@@ -27,6 +27,13 @@ int check_cycle(listint_t *list)
 			break;
 		}
 
+		if (current->next == current->next->next)
+		{
+			iscycle = 1;
+
+			break;
+		}
+
 		current = current->next;
 	}
 
