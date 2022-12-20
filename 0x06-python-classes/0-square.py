@@ -4,6 +4,7 @@
 
 """The class does nothing"""
 
+
 class Square:
     """Create an empty class"""
 
