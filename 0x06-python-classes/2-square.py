@@ -14,11 +14,11 @@ class Square:
             size: The specified size of the square to be created
         """
 
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+
         if size < 0:
             raise ValueError("size must be >= 0")
-
-        elif not isinstance(size, int):
-            raise TypeError("size must be an integer")
 
         else:
             self.__size = size
