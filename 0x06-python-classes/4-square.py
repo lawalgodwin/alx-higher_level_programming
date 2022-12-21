@@ -14,14 +14,7 @@ class Square:
             size: The specified size of the square to be created
         """
 
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-
-        if size < 0:
-            raise ValueError("size must be >= 0")
-
-        else:
-            self.__size = size
+        self.size = size
 
     def area(self):
         """Get the area of a square object from a public method
