@@ -50,7 +50,6 @@ class Rectangle:
         """public method that returns the calculated area"""
         return (self.width * self.height)
 
-
     def perimeter(self):
         """Public instance method that returns the perimeter"""
         return 2 * (self.widtth + self.height)
