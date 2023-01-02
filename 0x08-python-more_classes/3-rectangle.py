@@ -20,6 +20,9 @@ class Rectangle:
 
         i = 1
 
+        if self.width == 0 or self.height == 0:
+            return ""
+
         while (i <= self.height):
             if i == self.height:
                 r += "{}".format("#" * self.width)
