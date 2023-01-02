@@ -4,5 +4,5 @@
 
 
 class Rectangle:
-"""The blueprint for constucting a Rectangle object"""
+    """The blueprint for constucting a Rectangle object"""
     pass
