@@ -29,13 +29,21 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
 
-        while (i <= self.height):
-            if i == self.height:
-                r += "{}".format(self.print_symbol * self.width)
-                break
+        try:
+            while (i <= self.height):
+                if i == self.height:
+                    r += "{}".format(self.print_symbol * self.width)
+                    break
+                r += "{}\n".format(self.print_symbol * self.width)
+                i += 1
+        except Exception as e:
+            while (i <= type(self).height):
+                if i == type(self).height:
+                    r += "{}".format(type(self).print_symbol*type(self).width)
+                    break
+                r += "{}\n".format(type(self).print_symbol * type(self).width)
+                i += 1
 
-            r += "{}\n".format(self.print_symbol * self.width)
-            i += 1
         return r
 
     def __repr__(self):
