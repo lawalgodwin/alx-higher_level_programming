@@ -2,7 +2,7 @@
 
 """
 @author: Godwin Lawal
-My Adder module
+Integer addition module
 
 """
 

@@ -46,13 +46,18 @@ Test for exception given  b as string value
 ... except Exception as e:
 ...     print(e)
 b must be an integer
->>>
 
-Test for exception given a as None(No argument supplied to function)
-================================================
+Test for exception given a as None
+==================================
 >>> try:
 ...     print(add_integer(None))
 ... except Exception as e:
 ...     print(e)
 a must be an integer
->>>
+
+Test for no argumennt
+=====================
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
