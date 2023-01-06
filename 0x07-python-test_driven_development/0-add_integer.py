@@ -9,13 +9,7 @@ Integer addition module
 
 def add_integer(a, b=98):
     """Add to numbers together
-
-    Agrs:
-        a: The first  number (must be an integer)
-        b: The second number (This is optional but must be an intteger)
-
-    Returns:
-        The result of the addition
+    returns the result of the addition
     """
 
     if type(a) not in {int, float} or a is None:
