@@ -61,3 +61,18 @@ Test for no argumennt
 Traceback (most recent call last):
 ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(777, float('NaN'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
+
+>>> add_integer(666, float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(2000202, -float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
