@@ -15,7 +15,7 @@ VALID USAGE 1
 VALLID USAGE 2
 ==============
 ::
-        >>> print_sqaure(10)
+        >>> print_square(10)
         ##########
         ##########
         ##########
