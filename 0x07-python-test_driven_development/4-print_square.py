@@ -24,6 +24,6 @@ def print_square(size):
         return
 
     while i <= size:
-        print("{}".format("#" * size))
+        print("{}\n".format("#" * size), end='')
 
         i += 1
