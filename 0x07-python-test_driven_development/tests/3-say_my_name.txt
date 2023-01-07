@@ -1,0 +1,80 @@
+Test cases for ``say my name`` module
+=====================================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+VALID USECASE 1
+===============
+::
+        >>> say_my_name("Godwin", "Lawal")
+	My name is Godwin Lawal
+
+VALID USECASE 2
+===============
+::
+        >>> say_my_name("Godwin")
+	My name is Godwin 
+
+CASE no argument
+================
+::
+        >>> say_my_name()
+	Traceback (most recent call last):
+		...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+CASE of more than required argument
+===================================
+::
+        >>> say_my_name("Godwin", "Lawal", 0)
+	Traceback (most recent call last):
+		...
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+CASE of number as`first name` argument
+======================================
+::
+        >>> say_my_name(12, "Lawal")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+CASE of number as`last name` argument
+======================================
+::
+        >>> say_my_name("Godwin", 15)
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+CASE of list as`first name` argument
+======================================
+::
+        >>> say_my_name(["Godwin", "Lawal"], "Lawal")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+CASE of list as`last name` argument
+======================================
+::
+        >>> say_my_name("Godwin", ["Lawal", "Abiodun"])
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+CASE of tuple as`first name` argument
+======================================
+::
+        >>> say_my_name((1, 2), "Lawal")
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+CASE of tuple as`last name` argument
+======================================
+::
+        >>> say_my_name("Godwin", (1, 2))
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
