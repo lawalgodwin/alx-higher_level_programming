@@ -1,0 +1,82 @@
+Test cases and usage of the print_square function
+=================================================
+
+>>> print_square = __import__('4-print_square').print_square
+
+VALID USAGE 1
+=============
+::
+        >>> print_square(4)
+        ####
+        ####
+        ####
+        ####
+
+VALLID USAGE 2
+==============
+::
+        >>> print_sqaure(10)
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+        ##########
+
+VALID USAGE 3
+=============
+::
+        >>> print_square(0)
+
+VALID USAGE 4
+=============
+::
+        >>> print_square(1)
+        #
+
+INVALID USECASE
+======================================
+
+CASE of size not a +ve integer
+==============================
+::
+        >>> print_square(-1)
+	Traceback (most recent call last):
+		...
+	ValueError: size must be >= 0
+
+CASE of size = string
+=====================
+::
+        >>> print_square("40")
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+CASE of size not given
+==============================
+::
+        >>> print_square()
+	Traceback (most recent call last):
+		...
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+CASE of more than required argument
+===================================
+::
+        >>> print_square(50, 50)
+	Traceback (most recent call last):
+		...
+	TypeError: print_square() takes 1 positional argument but 2 were given
+
+CASE of size = float and -ve
+============================
+::
+        >>> print_square(-40.1)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
