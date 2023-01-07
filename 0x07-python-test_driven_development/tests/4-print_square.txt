@@ -31,6 +31,7 @@ VALID USAGE 3
 =============
 ::
         >>> print_square(0)
+	<BLANKLINE>
 
 VALID USAGE 4
 =============
