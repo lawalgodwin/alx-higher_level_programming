@@ -81,3 +81,11 @@ CASE of size = float and -ve
 	Traceback (most recent call last):
 		...
 	TypeError: size must be an integer
+
+CASE of size = None
+============================
+::
+        >>> print_square(None)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
