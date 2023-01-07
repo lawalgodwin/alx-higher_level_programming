@@ -53,7 +53,7 @@ CASE of size not a +ve integer
 CASE of size = string
 =====================
 ::
-        >>> print_square("40")
+        >>> print_square("forty")
 	Traceback (most recent call last):
 		...
 	TypeError: size must be an integer
