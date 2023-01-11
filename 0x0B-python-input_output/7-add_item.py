@@ -18,5 +18,3 @@ except FileNotFoundError:
 new_list.extend(argv[1:])
 
 save_to_json_file(new_list, 'add_item.json')
-
-print(load_from_json_file('add_item.json'))
