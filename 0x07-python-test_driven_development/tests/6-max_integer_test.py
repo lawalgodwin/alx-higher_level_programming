@@ -14,7 +14,7 @@ class TestMaxInteger(unittest.TestCase):
         """Test with only integer value"""
 
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
-        self.assertEqual([-22, -33, -44], -22)
+        self.assertEqual(max_integer([-22, -33, -44]), -22)
 
     def test_string_value(self):
         """Test with string value"""
