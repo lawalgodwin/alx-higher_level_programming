@@ -16,6 +16,12 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
         self.assertEqual(max_integer([-22, -33, -44]), -22)
 
+    def test_empty_value(self):
+        """Test with empty list"""
+        self.assertIsNone(max_integer([None]), None)
+	self.assertIsNone(max_integer([]), None)
+        self.assertEqual(max_integer(""), None)
+
     def test_string_value(self):
         """Test with string value"""
 
