@@ -4,6 +4,7 @@
    Returns true or false
 """
 
+
 def is_same_class(obj, a_class):
     """Checks if an Object is an instance of a_class"""
 
