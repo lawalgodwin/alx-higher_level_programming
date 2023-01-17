@@ -6,10 +6,6 @@
 class MyList(list):
     """ My PyList class """
 
-    def __init__(self):
-        """initialiser or constructor"""
-        super().__init__(self)
-
     def print_sorted(self):
         """Print the content in ascending order"""
 
