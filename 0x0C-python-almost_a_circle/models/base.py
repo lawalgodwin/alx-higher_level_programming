@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""The base class for all classes"""
+"""The base class for all subsequent classes"""
 
 
 class Base:
