@@ -18,6 +18,11 @@ class Rectangle(Base):
 
         self.y = y
 
+    def __str__(self):
+        """Get a human readable representation of a rec object"""
+        s = f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return (s)
+
     @property
     def width(self):
         """Getter of the width instance attribute"""
