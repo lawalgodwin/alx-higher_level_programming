@@ -87,8 +87,11 @@ class Rectangle(Base):
     def display(self):
         """Print the rectangle object to the stdout"""
         w = "#" * self.width
+        x_axis = self.x * ' '
+        y_axis = self.y * '\n'
         i = 1
+        print(y_axis, end='')
         while (i <= self.height):
-            print(w, end='')
+            print(f"{x_axis}{w}", end='')
             print()
             i += 1
