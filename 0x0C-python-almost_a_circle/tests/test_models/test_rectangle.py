@@ -14,6 +14,8 @@ class TestRectangle(unittest.TestCase):
         """Set up the reactangle object to be tested"""
 
         self.rec = Rectangle(10, 20)
+        self.rec2 = Rectangle(10, 30, 0, 0)
+        self.rec3 = Rectangle(8, 7, 0, 0, 12)
 
     def testIsBaseSubclass(self):
         """Test if the object inherits from the base class"""
@@ -29,6 +31,13 @@ class TestRectangle(unittest.TestCase):
         """Test craeting with just one arg"""
         with self.assertRaises(TypeError) as e:
             Rectangle(10)
+
+    def testArea(self):
+        """Test case for rectangle area fuction"""
+
+        self.assertEqual(self.rec.area(), 200)
+        self.assertEqual(self.rec2.area(), 300)
+        self.assertEqual(self.rec3.area(), 56)
 
 
 if __name__ == '__main__':
