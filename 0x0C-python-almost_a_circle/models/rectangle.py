@@ -20,7 +20,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """Get a human readable representation of a rec object"""
-        s = f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        s = f"[Rectangle] ({self.id}) \
+{self.x}/{self.y} - {self.width}/{self.height}"
         return (s)
 
     @property
