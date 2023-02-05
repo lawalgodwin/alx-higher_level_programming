@@ -96,10 +96,15 @@ class Rectangle(Base):
             print()
             i += 1
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the rectangle object"""
 
         rec_attrs = ("id", "width", "height", "x", "y")
+
+        if not args:
+
+            for k, v in kwargs.items():
+                setattr(self, k, v)
 
         for idx, key in enumerate(args):
 
