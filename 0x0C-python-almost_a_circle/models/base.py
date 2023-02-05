@@ -4,6 +4,8 @@
 
 import json
 
+from os.path import exists
+
 
 class Base:
     """The base class blueprint"""
@@ -83,3 +85,25 @@ class Base:
         newobj.update(**dictionary)
 
         return newobj
+
+    @classmethod
+    def load_from_file(cls):
+        """Load json string list from file, convert and create obj list"""
+
+        filename = f"{cls.__name__}.json"
+
+        list_obj = []
+
+        if not exists(filename):
+            return []
+
+        with open(filename, 'r', encoding='utf-8') as fd:
+
+            json_str = fd.read()
+
+        list_dict = cls.from_json_string(json_str)
+
+        for d in list_dict:
+            list_obj.append(cls.create(**d))
+
+        return list_obj
