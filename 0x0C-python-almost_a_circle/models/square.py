@@ -41,3 +41,9 @@ class Square(Rectangle):
                 setattr(self, k, v)
         for idx, value in enumerate(args):
             setattr(self, attrs[idx], value)
+
+    def to_dictionary(self):
+        """Convert the object into dictionary"""
+        attrs = ("id", "size", "x", "y")
+        d = {attr: getattr(self, attr) for attr in attrs}
+        return d
