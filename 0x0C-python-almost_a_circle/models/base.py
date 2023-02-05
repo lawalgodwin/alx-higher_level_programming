@@ -71,8 +71,15 @@ class Base:
     def create(cls, **dictionary):
         """Create an object from a dictionary"""
 
-        dummyobject = cls(3, 5, 9)
+        newobj = None
 
-        dummyobject.update(**dictionary)
+        if dictionary and dictionary != {}:
 
-        return dummyobject
+            if cls.__name__ == 'Rectangle':
+                newobj = cls(3, 5)
+            else:
+                newobj = cls(5)
+
+        newobj.update(**dictionary)
+
+        return newobj
