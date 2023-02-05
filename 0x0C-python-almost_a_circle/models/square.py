@@ -14,6 +14,7 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
         self.width = size
         self.height = size
+        self.size = size
 
     def __str__(self):
         """Return human-readable format for the square"""
@@ -30,3 +31,13 @@ class Square(Rectangle):
         """Set the size attribute to a new value"""
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Update the attributes of the square object"""
+        attrs = ("id", "size", "x", "y")
+
+        if ((not args) or (len(args) == 0)):
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        for idx, value in enumerate(args):
+            setattr(self, attrs[idx], value)
