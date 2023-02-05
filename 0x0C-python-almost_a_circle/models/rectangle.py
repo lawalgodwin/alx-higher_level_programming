@@ -109,3 +109,13 @@ class Rectangle(Base):
         for idx, key in enumerate(args):
 
             setattr(self, rec_attrs[idx], args[idx])
+
+    def to_dictionary(self):
+        """Convert into rec object dictionary object"""
+        d = dict(
+                id=self.id,
+                width=self.width,
+                height=self.height,
+                x=self.x,
+                y=self.y)
+        return d
