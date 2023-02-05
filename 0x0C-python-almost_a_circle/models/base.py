@@ -66,3 +66,13 @@ class Base:
             return list()
 
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Create an object from a dictionary"""
+
+        dummyobject = cls(3, 5, 9)
+
+        dummyobject.update(**dictionary)
+
+        return dummyobject
