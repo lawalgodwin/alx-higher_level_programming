@@ -34,7 +34,10 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Save to a json file the list of objects"""
+        """Save to a json file the list of objects
+           save empty list if no list_objs otherwise
+           save the list of jsonstring generated from list_objs
+        """
 
         list_dict = []
 
@@ -50,3 +53,16 @@ class Base:
                 json_string = Base.to_json_string(list_dict)
 
                 fd.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """get the dictionary representation of the json string
+           returns empty list if no json_string otherwise
+           returns a list of dictionary
+        """
+
+        if not json_string or json_string == []:
+
+            return list()
+
+        return json.loads(json_string)
