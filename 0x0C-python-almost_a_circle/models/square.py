@@ -19,3 +19,14 @@ class Square(Rectangle):
         """Return human-readable format for the square"""
 
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
+
+    @property
+    def size(self):
+        """Get the size attribute"""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Set the size attribute to a new value"""
+        self.width = value
+        self.height = value
