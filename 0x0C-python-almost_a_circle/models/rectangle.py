@@ -95,3 +95,12 @@ class Rectangle(Base):
             print(f"{x_axis}{w}", end='')
             print()
             i += 1
+
+    def update(self, *args):
+        """Update the rectangle object"""
+
+        rec_attrs = ("id", "width", "height", "x", "y")
+
+        for idx, key in enumerate(args):
+
+            setattr(self, rec_attrs[idx], args[idx])

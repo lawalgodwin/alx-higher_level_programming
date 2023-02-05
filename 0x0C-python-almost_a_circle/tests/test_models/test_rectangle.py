@@ -39,6 +39,12 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.rec2.area(), 300)
         self.assertEqual(self.rec3.area(), 56)
 
+    def testUpdate(self):
+        """Test for the update method"""
+        self.rec2.update(89, 2, 3, 4, 5)
+        self.assertEqual(str(self.rec2), '[Rectangle] (89) 4/5 - 2/3')
+        self.assertEqual(str(self.rec), '[Rectangle] (1) 0/0 - 10/20')
+
 
 if __name__ == '__main__':
     unittest.main()
