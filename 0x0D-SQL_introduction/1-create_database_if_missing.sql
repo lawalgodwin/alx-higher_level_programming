@@ -2,4 +2,4 @@
 
 -- Create a database named `hbtn_0c_0` in the server
 
-CRAETE DATABASE IF NOT EXISTS hbtn_0c_0;
+CREATE DATABASE hbtn_0c_0;
