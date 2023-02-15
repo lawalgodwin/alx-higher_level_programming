@@ -2,4 +2,4 @@
 
 -- Create a database named `hbtn_0c_0` in the server
 
-CRAETE DATABASE hbtn_0c_0
+CRAETE DATABASE IF NOT EXISTS hbtn_0c_0;
