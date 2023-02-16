@@ -6,12 +6,8 @@
 
 
 
-CREATE USER IF NOT EXISTS user_0d_1;
+CREATE USER IF NOT EXISTS user_0d_1@localhost IDENTIFIED WITH 'user_0d_1_pwd';
 
 -- Grant all privileges to the user just created
 
 GRANT ALL PRIVILEGES ON *.* TO user_0d_1;
-
--- Set the user password to user_0d_1_pwd
-
-SET PASSWORD='user_0d_1_pwd'
