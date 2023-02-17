@@ -1,8 +1,8 @@
 -- A script that creates the database, user and grant privileges to the user
 --
 -- create the database hbtn_0d_2 
-CREATE DATABASE IF NOT EXISTS hbtn_0d_2
--- switch to the database `hbtn_0c_0`
+CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+-- switch to the database `hbtn_0d_2`
 USE hbtn_0d_2;
 
 -- Create a user `user_0d_2` for the mysql server with the password `user_0d_2_pwd`
