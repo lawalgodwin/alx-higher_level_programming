@@ -3,7 +3,7 @@
 
 SELECT g.name
 FROM tv_genres AS g
-JOIN tv_show__genres AS t
+JOIN tv_show_genres AS t
 ON t.genre_id = g.id
 JOIN tv_shows AS s
 ON s.id = t.show_id
