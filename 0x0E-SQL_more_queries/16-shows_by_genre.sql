@@ -8,7 +8,7 @@
 
 SELECT s.title, g.name
 FROM tv_shows AS s
-JOIN tv_show_genres AS t
+LEFT JOIN tv_show_genres AS t
 ON t.show_id = s.id
 LEFT JOIN tv_genres AS g
 ON g.id = t.genre_id
