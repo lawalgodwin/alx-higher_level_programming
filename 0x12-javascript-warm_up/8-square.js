@@ -2,7 +2,7 @@
 
 const firstArg = process.argv[2];
 let row = '';
-const printChar = 'x';
+const printChar = 'X';
 
 if (!firstArg || isNaN(firstArg)) console.log('Missing size');
 
