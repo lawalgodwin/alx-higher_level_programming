@@ -6,6 +6,7 @@ from sys import argv
 
 
 if __name__ == '__main__':
+    """Connect to the DB and get all the states"""
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
