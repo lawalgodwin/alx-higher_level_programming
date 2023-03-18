@@ -16,6 +16,7 @@ if __name__ == '__main__':
 
     query = '''SELECT * FROM states
                WHERE name LIKE "N%"
+               ORDER BY states.id ASC
             '''
     db_cursor.execute(query)
 
