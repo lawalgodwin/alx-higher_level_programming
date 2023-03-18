@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+""" Select states from database """
+import MySQLdb
+from sys import argv
+
+
+if __name__ == '__main__':
+    db = MySQLdb.connect(
+        host='localhost',
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3])
+    db_cursor = db.cursor()
+    query = "SELECT * FROM states ORDER BY states.id;"
+    db_cursor.execute(query)
+    states = db_cursor.fetchall()
+    for s in states:
+        print(f"{s}")
