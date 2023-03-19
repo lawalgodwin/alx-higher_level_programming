@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     db_cursor = DB.cursor()
     # query the DB usng the cursor
-    stmt = 'SELECT * FROM states WHERE name = "{}"'.format(argv[4])
+    stmt = 'SELECT * FROM states WHERE name LIKE BINARY "{}"'.format(argv[4])
     db_cursor.execute(stmt)
 
     rows_fetched = db_cursor.fetchall()
