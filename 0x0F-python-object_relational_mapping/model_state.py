@@ -2,19 +2,16 @@
 
 """Mapping the `State` class to DB table `states`"""
 
-from sqlalchemy.orm import (DeclarativeBase, mapped_column)
-from sqlalchemy import (Integer, String)
+from sqlalchemy.ext.declarative import declarative_base 
+from sqlalchemy import (Integer, String, Column)
 
 
-class Base(DeclarativeBase):
-    """Declarative Base class"""
-    pass
-
+Base = declarative_base()
 
 class State(Base):
     """The class to be mapped to states table"""
     __tablename__ = 'states'
 
-    id = mapped_column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True)
 
-    name = mapped_column(String(128), nullable=False)
+    name = Column(String(128), nullable=False)
