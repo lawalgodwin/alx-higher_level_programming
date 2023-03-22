@@ -2,11 +2,12 @@
 
 """Mapping the `State` class to DB table `states`"""
 
-from sqlalchemy.ext.declarative import declarative_base 
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import (Integer, String, Column)
 
 
 Base = declarative_base()
+
 
 class State(Base):
     """The class to be mapped to states table"""
