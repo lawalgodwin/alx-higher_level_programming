@@ -8,4 +8,4 @@ fi
 
 URL=$1
 
-curl -sI "$URL" | grep -i Content-Length | grep -Eo "[0-9]+"
+curl -sI "$URL" | wc -c
