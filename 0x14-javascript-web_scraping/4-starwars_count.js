@@ -12,7 +12,9 @@ request(`${process.argv[2]}`, (err, res, body) => {
   let count = 0;
   const characterId = 18;
   films.forEach((film) => {
-    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) { count += 1; }
+    film.characters.forEach((character) => {
+      if (character.includes(`${characterId}`)) count += 1;
+    });
   });
   console.log(count);
 });
