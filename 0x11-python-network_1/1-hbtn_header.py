@@ -10,5 +10,5 @@ url = sys.argv[1]
 req = urllib.request.Request(url)
 
 with urllib.request.urlopen(req) as res:
-    headers = {k: v for k, v in res.headers.items()}
+    headers = dict(res.headers)
     print(headers.get('X-Request-Id', None))
