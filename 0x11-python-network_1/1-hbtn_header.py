@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" A Python script fetches the value of a header
-    Usage: ./1-hbtn_header.py <URL>
+"""A Python script fetches the value of a header
+Usage: ./1-hbtn_header.py <URL>
 """
 
 import sys
