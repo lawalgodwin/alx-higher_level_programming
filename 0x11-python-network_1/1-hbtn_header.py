@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-""" A Python script fetches the value of a header"""
+""" A Python script fetches the value of a header """
+
 import sys
 import urllib.request
 
