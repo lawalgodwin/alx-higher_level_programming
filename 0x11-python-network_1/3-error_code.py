@@ -19,4 +19,4 @@ if __name__ == '__main__':
     try:
         make_get_request()
     except error.HTTPError as e:
-        print('Error code:', e.code)
+        print('Error code: {}'.format(e.code))
