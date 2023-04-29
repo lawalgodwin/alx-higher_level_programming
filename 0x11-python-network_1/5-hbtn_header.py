@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A script the get a http response header X-Request-Id value
+"""A script that get a http response header X-Request-Id value
 Usage: ./5-hbtn_header.py <URL>
 """
 from sys import argv
