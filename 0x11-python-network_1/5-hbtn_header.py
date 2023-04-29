@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""A script the get a http response header X-Request-Id value """
-
+"""A script the get a http response header X-Request-Id value
+Usage: ./5-hbtn_header.py <URL>
+"""
 from sys import argv
 import requests
 
-url = argv[1]
 
+if __name__ == "__main__":
+    url = argv[1]
 
-if __name__ == '__main__':
     res = requests.get(url)
-
-    print(res.headers.get('X-Request-Id'))
+    print(res.headers.get("X-Request-Id"))
