@@ -10,4 +10,4 @@ raw_data = argv[2]
 if __name__ == '__main__':
 
     res = requests.post(url, data={'email': raw_data})
-    print(res.content)
+    print(res.content.decode('utf8'))
