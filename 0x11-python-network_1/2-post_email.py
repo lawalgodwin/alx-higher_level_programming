@@ -10,7 +10,7 @@ data = dict()
 data['email'] = sys.argv[2]
 
 data = urllib.parse.urlencode(data)
-data = data.encode('ascii')
+data = data.encode('utf-8')
 
 req = urllib.request.Request(url, data)
 
