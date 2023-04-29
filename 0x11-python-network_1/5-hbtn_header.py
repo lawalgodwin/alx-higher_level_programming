@@ -6,6 +6,8 @@ import requests
 
 url = argv[1]
 
-res = requests.get(url)
 
-print(res.headers.get('X-Request-Id'))
+if __name__ == '__main__':
+    res = requests.get(url)
+
+    print(res.headers.get('X-Request-Id'))
