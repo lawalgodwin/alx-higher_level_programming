@@ -8,6 +8,7 @@ import sys
 import urllib.parse
 import urllib.requesti
 
+
 def post_data():
     """Post data to server"""
     url = sys.argv[1]
@@ -16,6 +17,7 @@ def post_data():
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as res:
         print(res.read().decode("utf-8"))
+
 
 if __name__ == '__main__':
     post_data()
