@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" A Python script that sends data (POST Request)"""
+""" A Python script that sends data to a url [POST Request]
+Usage: ./2-post_email.py <URL> <email>
+Display the uft-8 decoder response
+"""
 
 import sys
 import urllib.parse
