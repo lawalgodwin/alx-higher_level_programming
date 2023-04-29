@@ -6,8 +6,7 @@ import urllib.parse
 import urllib.request
 
 url = sys.argv[1]
-data = dict()
-data['email'] = sys.argv[2]
+data = {'email': sys.argv[2]}
 
 data = urllib.parse.urlencode(data)
 data = data.encode('utf-8')
