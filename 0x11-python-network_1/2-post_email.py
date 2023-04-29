@@ -6,7 +6,7 @@ Display the uft-8 decoded response
 
 import sys
 import urllib.parse
-import urllib.requesti
+import urllib.request
 
 
 def post_data():
