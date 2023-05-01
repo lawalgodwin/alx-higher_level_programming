@@ -2,7 +2,6 @@
 """Handle Http error using the requests module"""
 from sys import argv
 import requests
-from requests.exceptions import HTTPError
 
 
 if __name__ == "__main__":
