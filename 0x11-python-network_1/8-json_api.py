@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Send data to server using the requests module"""
+"""Send payload to server using the requests module 'get' method"""
 from sys import argv
 import requests
 
