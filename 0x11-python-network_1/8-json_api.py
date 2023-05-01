@@ -5,14 +5,17 @@ import requests
 
 
 if __name__ == "__main__":
-    data = argv[1] if argv[1] else ""
+    data = argv[1] if argv[2] else ""
     payload = {"q": data}
     url = 'http://0.0.0.0:5000/search_user'
 
-    res = requests.get(url, params=payload)
-    if res.content and res.json():
-        print("[{}] {}".format(res.json()['id'], res.json()['name']))
-    elif not res.json():
-        print("Not a valid JSON")
-    else:
+    res = requests.post(url, data=payload)
+    response = res.json()
+
+    if response == {}:
         print('No result')
+        return
+    if not response:
+        print('Not a valid JSON')
+        return
+    print("[{}] {}".format(res.json().get('id'), res.json().get('name')))
